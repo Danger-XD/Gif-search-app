@@ -18,7 +18,7 @@ body{
 }
 .search-box{
     width: 100%;
-    display: none;
+    display: flex;
     justify-content: center;
     padding: 2rem 0px;
 }
@@ -57,13 +57,14 @@ body{
 }
 .gif-image{
     width: 90%; 
-    height: fit-content;
+    height: 90%;
 }
 .img-container:hover{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .loader{
+    display: block;
     height: 12rem;
     width: 12rem;
     border: 15px solid gray;
@@ -100,24 +101,32 @@ body{
 @media only screen and (768px > width >= 576px) {
     .container{
         max-width: 520px;
-        background-color: green;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
     }
 }
 @media only screen and (992px > width >= 768px){
     .container{
         max-width: 720px;
-        background-color: yellow;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 1rem;
     }
 }
-@media only screen and (1200px > width >= 992px){
+ @media only screen and (1200px > width >= 992px){
     .container{
         max-width: 960px;
-        background-color: brown;
     }
 }
+
 @media only screen and (width >= 1200px){
     .container{
         max-width: 1140px;
     }
-}
+} 
 /* responsive design ends here */
