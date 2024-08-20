@@ -3,7 +3,7 @@ const searchBox = document.querySelector(".search-box");
 
 function getGif() {
   const searchText = document.getElementById("search-text");
-  const apiKey = "dBD6nL4ML4lvNN0uH2O28XrdqWKWVNMN";
+  const apiKey = "Your_API_Key";
   let gifLimit = 24;
   let apiUrl = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(
     searchText.value
